@@ -1,0 +1,769 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SPARK4AI</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/ vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style5.css'%}" rel="stylesheet">
+  <link href="{% static 'assets1/css/style3.css'%}" rel="stylesheet">
+  <!-- Blog CSS fikes -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900"
+    rel="stylesheet">
+  <!-- =======================================================
+  * Template Name: Selecao
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <img src="{% static 'assets/img/favicon.png'%}" style="height:80px; width: 80px;" alt="" class="img-fluid">
+      <div class="logo">
+
+        <h1><a href="index.html">SPARK4AI</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="{% static 'assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#features">Services</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'council' %}">AI Council</a></li>
+          <li><a class="nav-link scrollto " href="{% url 'projects' %}">Projects</a></li>
+          <li><a class="nav-link scrollto" href="#speakers">Blog</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+          <!-- <li><a class="nav-link scrollto" href="#contact">SignIn</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">Welcome to <span style="color: #BF8C5D;">SPARK4AI</span>
+          </h2>
+          <p class="animate__animated fanimate__adeInUp">
+            SPARK4AI is your gateway to the world of Artificial Intelligence. We're a dynamic AI club dedicated to
+            fueling your passion for cutting-edge technology. Through workshops, collaborative projects, and
+            immersive experiences, we empower students to dive headfirst into the exciting realm of AI.</p>
+          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">COLLABORATIVE <span style="color: #BF8C5D;">PROJECTS</span>
+          </h2>
+          <p class="animate__animated animate__fadeInUp">Collaborate with a team of 4-5 AI enthusiasts on practical
+            projects,
+            receive bi-weekly updates for continuous learning, and earn AI Council-endorsed certificates. Benefit from
+            mentorship
+            by seasoned experts in the field for guidance throughout your journey.</p>
+          <a href="#features" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown"><span style="color: #BF8C5D;">AI</span> COUNCIL</h2>
+          <p class="animate__animated animate__fadeInUp">The Artificial Intelligence Council, led by select IITs, unites
+            AI
+            organizations from multiple colleges in India. Its mission: drive AI advancements and innovations
+            collectively,
+            fostering progress in the field..</p>
+          <a href="{% url 'council' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+        </div>
+      </div>
+
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+    </svg>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>About</h2>
+          <p>Who we are</p>
+        </div>
+
+        <div class="row content" data-aos="fade-up">
+          <div class="col-lg-6">
+            <p>
+              Spark4AI fuels AI enthusiasm through real-world projects and knowledge sharing, empowering members to be
+              part of
+              the AI revolution and shape their future in artificial intelligence.
+            </p>
+            <p> At Spark4AI, We:</p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ignites AI passion, inspiring students to explore practical
+                applications.</li>
+              <li><i class="ri-check-double-line"></i> Offer hands-on AI projects and foster collaborative knowledge
+                sharing.</li>
+              <li><i class="ri-check-double-line"></i> Members actively shape their AI careers through valuable
+                experiences.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Spark4AI is a vibrant community of AI enthusiasts united by a common passion for harnessing
+              the transformative power of Artificial Intelligence. Our club is driven by a shared vision to solve
+              real-world
+              problems and unlock new possibilities through AI innovation.<br /><br /> We are committed to creating a
+              collaborative
+              platform where students and AI enthusiasts can come together, learn, experiment, and actively participate
+              in
+              the AI revolution.
+            </p>
+            <a href="#" class="btn-learn-more">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Services</h2>
+          <p>What we do offer</p>
+        </div>
+        <ul class="nav nav-tabs row d-flex">
+          <li class="nav-item col-3" data-aos="zoom-in">
+            <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+              <i class="ri-group-line"></i>
+
+              <h4 class="d-none d-lg-block">Collaborative Projects</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="100">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+              <i class="ri-gps-line"></i>
+              <h4 class="d-none d-lg-block">Roadmap to Artificial Intelligence</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="200">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+              <i class="ri-body-scan-line"></i>
+              <h4 class="d-none d-lg-block">AI Events & Workshops</h4>
+            </a>
+          </li>
+          <li class="nav-item col-3" data-aos="zoom-in" data-aos-delay="300">
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-4">
+
+              <i class="ri-terminal-window-line" style="margin-left: -60px;"></i>
+              <h4 class="d-none d-lg-block" style="margin-left: 10px;">Hackathons</h4>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up">
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>AI Project Collaboration and Learning Support</h3>
+                <p>
+                  Join forces with a team of 4-5 enthusiasts to work on real-world AI projects. Regular updates will be
+                  shared
+                  every 15 days, ensuring progress and learning. Upon successful completion, certificates endorsed by
+                  the AI
+                  Council will be awarded. You'll also receive mentorship from experienced seniors, professors, and
+                  industry
+                  leaders with deep subject knowledge to guide you along the way.
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Get a collaborative platform and structured framework to work
+                    on AI projects.</li>
+                  <li><i class="ri-check-double-line"></i> Certificates of completion from Professors, AI Council, and
+                    Industry leaders.</li>
+                  <li><i class="ri-check-double-line"></i> Receive mentorship from experienced seniors, professors, and
+                    industry leaders.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/feature-1.png'%}" alt="" class="img-fluid" style="margin-top:-50px ;">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Comprehensive AI Upskilling Roadmap</h3>
+                <p>
+                  Embark on your AI journey through our upskilling programs. We've meticulously curated a detailed
+                  roadmap,
+                  encompassing the finest resources for mastering various AI domains. Our roadmap is a comprehensive
+                  guide to
+                  help you navigate the world of artificial intelligence effectively.
+
+                </p>
+                <!-- <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p> -->
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Get a structured roadmap with relevant content to upskill
+                    yourself in AI.</li>
+                  <li><i class="ri-check-double-line"></i> Expert-curated roadmap covering domains like NLP, DL, ML, and
+                    more.
+
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Easy access to these resources directly from our website.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Start your AI journey with our comprehensive upskilling
+                    programs.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/feature-2.png'%}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Fueling AI Enthusiasm with Vibrant Events</h3>
+                <p>
+                  We're dedicated to fostering AI enthusiasm. Our calendar is filled with engaging activities such as
+                  hackathons,
+                  workshops, and speaker sessions. These events cater to our internal community as well as reach far and
+                  wide
+                  across India through strategic sponsor partnerships. Join us to be a part of the AI revolution!
+                </p>
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Engaging AI activities including hackathons, workshops, and
+                    speaker sessions.</li>
+                  <li><i class="ri-check-double-line"></i> Dive into the world of AI with hands-on workshops and
+                    learning sessions.
+                  </li>
+                  <li><i class="ri-check-double-line"></i>
+                    Events cater to our internal community and reach across India through partnerships.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Join the AI revolution by participating in our exciting
+                    events.
+                  </li>
+
+                </ul>
+                <!-- <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p> -->
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/feature-3.png'%}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
+                <h3>Thriving in AI Hackathons: Engage, Collaborate, Showcase and Learn</h3>
+                <p>
+                  We actively participate in AI hackathons organized by various clubs, organizations, and the esteemed
+                  AI Council. These competitions provide a valuable platform to test our practical AI knowledge,
+                  collaborate with peers, showcase our skills on a broader stage, and gain recognition in the field.
+                </p>
+                <!-- <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore
+                  magna aliqua.
+                </p> -->
+                <ul>
+                  <li><i class="ri-check-double-line"></i> Actively participate in AI hackathons organized by various
+                    entities. </li>
+                  <li><i class="ri-check-double-line"></i> Test and showcase your practical AI knowledge on a broader
+                    stage.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Collaborate with peers and experts in competitive AI
+                    challenges.
+                  </li>
+                  <li><i class="ri-check-double-line"></i> Enhance your AI skills through hands-on hackathon engagement.
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/feature-4.png'%}" alt="" class="img-fluid" style="margin-top: -60px;">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Cta Section ======= 
+    <section id="cta" class="cta">
+      <div class="container">
+
+        <div class="row" data-aos="zoom-out">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Call To Action</h3>
+            <p>Join us now to make a positive impact and be part of something greater.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section> End Cta Section -->
+    <!-- ======= Speakers Section ======= -->
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Latest News</h2>
+          <p>Blogs</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
+              <img src="{%static 'assets/img/speakers/NLP.jpg' %}" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a
+                    href="https://www.analyticsvidhya.com/blog/2022/01/nlp-tutorials-part-i-from-basics-to-advance/">NLP_Basics to Advance </a>
+                </h3>
+                <p>Analytics Vidhya</p>
+                <div class="social">
+                  <a
+                    href="https://www.analyticsvidhya.com/blog/2022/01/nlp-tutorials-part-i-from-basics-to-advance/">View
+                    Blog <i class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
+              <img src="{%static 'assets/img/speakers/blog6.webp' %}" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://deepgram.com/learn/visualizing-and-explaining-transformer-models-from-the-ground-up">Visualizing Transformers</a></h3>
+                <p>Deepgram</p>
+                <div class="social">
+                  <a href="https://deepgram.com/learn/visualizing-and-explaining-transformer-models-from-the-ground-up">View Blog <i
+                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
+              <img src="{%static 'assets/img/speakers/bag.jpg' %}" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://victorzhou.com/blog/bag-of-words/">Bag of words word embedding</a></h3>
+                <p>Victorzhou</p>
+                <div class="social">
+                  <a href="https://victorzhou.com/blog/bag-of-words/">View Blog <i
+                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
+              <img src="{%static 'assets/img/speakers/time.jpg' %}" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">Time series foreecasting using LSTM
+                  </a></h3>
+                <p>Machine Learning Majestry</p>
+                <div class="social">
+                  <a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">View Blog <i
+                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
+              <img src="{%static 'assets/img/speakers/AtoZ.png' %}" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/">Support Vector Machine A-Z</a></h3>
+                <p>Analytics Vidhya</p>
+                <div class="social">
+                  <a href="https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/">View Blog <i
+                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
+              <img src="{%static 'assets/img/speakers/Blogging.jpg' %}" alt="Speaker 1" class="img-fluid">
+              <div class="details">
+                <h3><a href="https://www.hostinger.in/tutorials/chatgpt-for-blogging">How to use chatgpt for blogging
+                  </a></h3>
+                <p>Hostinger</p>
+                <div class="social">
+                  <a href="https://www.hostinger.in/tutorials/chatgpt-for-blogging">View Blog <i
+                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section><!-- End Speakers Section -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Team</h2>
+          <p>Our Team</p>
+        </div>
+
+        <div class="row">
+
+
+
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="member" data-aos="fade-up" data-aos-delay="100">
+                <div class="member-img">
+                  <img src="{% static 'assets/img/team/abhishek.jpg'%}" class="img-fluid" alt="">
+                  <div class="social">
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100034049521709&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/tiwari__abhi2001?igshid=MzNlNGNkZWQ4Mg=="><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-kumar-tiwari-b24952208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Abhishek Kumar Tiwari</h4>
+                  <span>AI Lead</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="member" data-aos="fade-up" data-aos-delay="200">
+                <div class="member-img">
+                  <img src="{% static 'assets/img/team/sankalp.jpg'%}" class="img-fluid" alt="">
+                  <div class="social">
+                    
+                    <a href="https://www.facebook.com/sankalp.patidar.3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/sankalp_patidar?igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sankalp-patidar/"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Sankalp Patidar</h4>
+                  <span>AI Lead</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 d-flex align-items-center">
+              <div class="member" data-aos="fade-up" data-aos-delay="300">
+                <div class="member-img">
+                  <img src="{% static 'assets/img/team/ashish.png'%}" class="img-fluid" alt="">
+                  <div class="social">
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100009473057660"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/ashish_gupta_akk/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ashish-kumar-iitkgp/"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+                <div class="member-info">
+                  <h4>Ashish Kumar</h4>
+                  <span>AI Lead</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/raunak1.jpg'%}" class="img-fluid" alt="" style="height: 50%;">
+                <div class="social">
+                  
+                  <a href="https://www.facebook.com/profile.php?id=100074308419553"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/raunakgupta678/"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/raunak-raj-03319b227/"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Raunak Raj</h4>
+                <span>AI & Management Head</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/anusha.png'%}" class="img-fluid" alt="">
+                <div class="social">
+                
+                  <a href="https://www.facebook.com/profile.php?id=100075339798252"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/anusha_1763?igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/anusha-borole-a4574b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Anusha Hitendra Borole</h4>
+                <span>AI & Design Head</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/priyansh1.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                  
+                  <a href="https://www.facebook.com/profile.php?id=100075516824922&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/priyansh_.agrawal?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/priyansh-agrawal-6a05a222a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Priyansh Agrawal</h4>
+                <span>AI & Sponshorship Head</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'assets/img/team/risabh.jpg'%}" class="img-fluid" alt="">
+                <div class="social">
+                 
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rishabh Mishra</h4>
+                <span>AI & Event Head</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title" data-aos="zoom-out">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4" data-aos="fade-right">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>IIT Kharagpur, Kharagpur, West Bengal</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>spark4ai.iitkgp@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9693878306</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left">
+
+            <form action="{% url 'contact' %}" method="post" role="form" class="php-email-form">
+              {%csrf_token%}
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3 style="color: #E6D8A0;">SPARK4AI</h3>
+      <p>Spark your way to AI excellence!!</p>
+      <div class="social-links">
+
+        <a href="https://www.facebook.com/profile.php?id=61552039076712&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/spark4ai.iitkgp?igshid=NjIwNzIyMDk2Mg==" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/spark4ai/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Spark4AI</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">Spark4AI</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+  <!-- Blog js files -->
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets1/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets1/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets1/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets1/vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'assets1/vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets1/js/main.js'%}"></script>
+
+</body>
+
+</html>
