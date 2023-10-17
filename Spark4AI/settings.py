@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 import socketserver
-import os
 from wsgiref import handlers
 socketserver.BaseServer.handle_error = lambda *args, **kwargs: None
 handlers.BaseHandler.log_exception = lambda *args, **kwargs: None
@@ -29,11 +28,10 @@ SECRET_KEY = 'django-insecure-u1s3y0-rzfo=d^q#*&x^i5l&395i#b)a3)zfvfq3r4+xi9y((i
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-if os.getcwd() == '/app':
-    DEBUG = False
 
 ALLOWED_HOSTS = ['*']
-
+from django.core.servers.basehttp import WSGIServer
+WSGIServer.handle_error = lambda *args, **kwargs: None
 
 # Application definition
 
