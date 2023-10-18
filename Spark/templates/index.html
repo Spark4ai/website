@@ -48,10 +48,11 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center  header-transparent ">
     <div class="container d-flex align-items-center justify-content-between">
-      <img src="{% static 'assets/img/favicon.png'%}" style="height:80px; width: 80px;" alt="" class="img-fluid">
+      <a href="{% url 'index' %}"><img src="{% static 'assets/img/favicon.png'%}" style="height:80px; width: 80px;"
+          alt="" class="img-fluid"></a>
       <div class="logo">
 
-        <h1><a href="index.html">SPARK4AI</a></h1>
+        <h1><a href="{% url 'index' %}">SPARK4AI</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="{% static 'assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -110,12 +111,13 @@
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown"><span style="color: #BF8C5D;">AI</span> COUNCIL</h2>
-          <p class="animate__animated animate__fadeInUp">The Artificial Intelligence Council, led by select IITs, unites
-            AI
-            organizations from multiple colleges in India. Its mission: drive AI advancements and innovations
-            collectively,
-            fostering progress in the field..</p>
-          <a href="{% url 'council' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+          <p class="animate__animated animate__fadeInUp">The Artificial Intelligence Council is a collaborative
+            consortium of artificial intelligence organizations from various colleges, with select IITs taking the lead.
+            This council was established with a clear mission to spearhead advancements and innovations in the field of
+            AI within India. It brings together a network of prestigious colleges, including distinguished IITs, to
+            collectively drive progress in artificial intelligence.</p>
+          <a href="{% url 'council' %}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+            More</a>
         </div>
       </div>
 
@@ -162,11 +164,11 @@
         <div class="row content" data-aos="fade-up">
           <div class="col-lg-6">
             <p>
-              Spark4AI fuels AI enthusiasm through real-world projects and knowledge sharing, empowering members to be
+              SPARK4AI fuels AI enthusiasm through real-world projects and knowledge sharing, empowering members to be
               part of
               the AI revolution and shape their future in artificial intelligence.
             </p>
-            <p> At Spark4AI, We:</p>
+            <p> At SPARK4AI, We:</p>
             <ul>
               <li><i class="ri-check-double-line"></i> Ignites AI passion, inspiring students to explore practical
                 applications.</li>
@@ -178,7 +180,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-              Spark4AI is a vibrant community of AI enthusiasts united by a common passion for harnessing
+              SPARK4AI is a vibrant community of AI enthusiasts united by a common passion for harnessing
               the transformative power of Artificial Intelligence. Our club is driven by a shared vision to solve
               real-world
               problems and unlock new possibilities through AI innovation.<br /><br /> We are committed to creating a
@@ -397,12 +399,12 @@
               <img src="{%static 'assets/img/speakers/NLP.jpg' %}" alt="Speaker 1" class="img-fluid">
               <div class="details">
                 <h3><a
-                    href="https://www.analyticsvidhya.com/blog/2022/01/nlp-tutorials-part-i-from-basics-to-advance/">NLP_Basics to Advance </a>
+                    href="https://www.analyticsvidhya.com/blog/2022/01/nlp-tutorials-part-i-from-basics-to-advance/">NLP_Basics
+                    to Advance </a>
                 </h3>
                 <p>Analytics Vidhya</p>
                 <div class="social">
-                  <a
-                    href="https://www.analyticsvidhya.com/blog/2022/01/nlp-tutorials-part-i-from-basics-to-advance/">View
+                  <a href="https://www.analyticsvidhya.com/blog/2022/01/nlp-tutorials-part-i-from-basics-to-advance/">View
                     Blog <i class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
                 </div>
               </div>
@@ -412,11 +414,13 @@
             <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
               <img src="{%static 'assets/img/speakers/blog6.webp' %}" alt="Speaker 1" class="img-fluid">
               <div class="details">
-                <h3><a href="https://deepgram.com/learn/visualizing-and-explaining-transformer-models-from-the-ground-up">Visualizing Transformers</a></h3>
+                <h3><a
+                    href="https://deepgram.com/learn/visualizing-and-explaining-transformer-models-from-the-ground-up">Visualizing
+                    Transformers</a></h3>
                 <p>Deepgram</p>
                 <div class="social">
-                  <a href="https://deepgram.com/learn/visualizing-and-explaining-transformer-models-from-the-ground-up">View Blog <i
-                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                  <a href="https://deepgram.com/learn/visualizing-and-explaining-transformer-models-from-the-ground-up">View
+                    Blog <i class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
                 </div>
               </div>
             </div>
@@ -428,8 +432,8 @@
                 <h3><a href="https://victorzhou.com/blog/bag-of-words/">Bag of words word embedding</a></h3>
                 <p>Victorzhou</p>
                 <div class="social">
-                  <a href="https://victorzhou.com/blog/bag-of-words/">View Blog <i
-                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                  <a href="https://victorzhou.com/blog/bag-of-words/">View Blog <i class="bi bi-arrow-right-circle-fill"
+                      style="padding-left:20px ;"></i></a>
                 </div>
               </div>
             </div>
@@ -438,7 +442,8 @@
             <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
               <img src="{%static 'assets/img/speakers/time.jpg' %}" alt="Speaker 1" class="img-fluid">
               <div class="details">
-                <h3><a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">Time series foreecasting using LSTM
+                <h3><a href="https://machinelearningmastery.com/lstm-for-time-series-prediction-in-pytorch/">Time series
+                    foreecasting using LSTM
                   </a></h3>
                 <p>Machine Learning Majestry</p>
                 <div class="social">
@@ -452,11 +457,13 @@
             <div class="speaker1" data-aos="fade-up" data-aos-delay="100">
               <img src="{%static 'assets/img/speakers/AtoZ.png' %}" alt="Speaker 1" class="img-fluid">
               <div class="details">
-                <h3><a href="https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/">Support Vector Machine A-Z</a></h3>
+                <h3><a
+                    href="https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/">Support
+                    Vector Machine A-Z</a></h3>
                 <p>Analytics Vidhya</p>
                 <div class="social">
-                  <a href="https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/">View Blog <i
-                      class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
+                  <a href="https://www.analyticsvidhya.com/blog/2021/06/support-vector-machine-better-understanding/">View
+                    Blog <i class="bi bi-arrow-right-circle-fill" style="padding-left:20px ;"></i></a>
                 </div>
               </div>
             </div>
@@ -500,10 +507,14 @@
                 <div class="member-img">
                   <img src="{% static 'assets/img/team/abhishek.jpg'%}" class="img-fluid" alt="">
                   <div class="social">
-                    
-                    <a href="https://www.facebook.com/profile.php?id=100034049521709&mibextid=ZbWKwL"><i class="bi bi-facebook"></i></a>
-                    <a href="https://instagram.com/tiwari__abhi2001?igshid=MzNlNGNkZWQ4Mg=="><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/abhishek-kumar-tiwari-b24952208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100034049521709&mibextid=ZbWKwL"><i
+                        class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com/tiwari__abhi2001?igshid=MzNlNGNkZWQ4Mg=="><i
+                        class="bi bi-instagram"></i></a>
+                    <a
+                      href="https://www.linkedin.com/in/abhishek-kumar-tiwari-b24952208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
                 <div class="member-info">
@@ -519,9 +530,10 @@
                 <div class="member-img">
                   <img src="{% static 'assets/img/team/sankalp.jpg'%}" class="img-fluid" alt="">
                   <div class="social">
-                    
+
                     <a href="https://www.facebook.com/sankalp.patidar.3"><i class="bi bi-facebook"></i></a>
-                    <a href="https://instagram.com/sankalp_patidar?igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a>
+                    <a href="https://instagram.com/sankalp_patidar?igshid=OGQ5ZDc2ODk2ZA=="><i
+                        class="bi bi-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/sankalp-patidar/"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
@@ -538,7 +550,7 @@
                 <div class="member-img">
                   <img src="{% static 'assets/img/team/ashish.png'%}" class="img-fluid" alt="">
                   <div class="social">
-                    
+
                     <a href="https://www.facebook.com/profile.php?id=100009473057660"><i class="bi bi-facebook"></i></a>
                     <a href="https://www.instagram.com/ashish_gupta_akk/"><i class="bi bi-instagram"></i></a>
                     <a href="https://www.linkedin.com/in/ashish-kumar-iitkgp/"><i class="bi bi-linkedin"></i></a>
@@ -566,7 +578,7 @@
               <div class="member-img">
                 <img src="{% static 'assets/img/team/raunak1.jpg'%}" class="img-fluid" alt="" style="height: 50%;">
                 <div class="social">
-                  
+
                   <a href="https://www.facebook.com/profile.php?id=100074308419553"><i class="bi bi-facebook"></i></a>
                   <a href="https://www.instagram.com/raunakgupta678/"><i class="bi bi-instagram"></i></a>
                   <a href="https://www.linkedin.com/in/raunak-raj-03319b227/"><i class="bi bi-linkedin"></i></a>
@@ -584,10 +596,13 @@
               <div class="member-img">
                 <img src="{% static 'assets/img/team/anusha.png'%}" class="img-fluid" alt="">
                 <div class="social">
-                
+
                   <a href="https://www.facebook.com/profile.php?id=100075339798252"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/anusha_1763?igshid=OGQ5ZDc2ODk2ZA=="><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/anusha-borole-a4574b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://instagram.com/anusha_1763?igshid=OGQ5ZDc2ODk2ZA=="><i
+                      class="bi bi-instagram"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/anusha-borole-a4574b224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                      class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -602,10 +617,14 @@
               <div class="member-img">
                 <img src="{% static 'assets/img/team/priyansh1.jpg'%}" class="img-fluid" alt="">
                 <div class="social">
-                  
-                  <a href="https://www.facebook.com/profile.php?id=100075516824922&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/priyansh_.agrawal?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/priyansh-agrawal-6a05a222a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
+
+                  <a href="https://www.facebook.com/profile.php?id=100075516824922&mibextid=LQQJ4d"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/priyansh_.agrawal?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><i
+                      class="bi bi-instagram"></i></a>
+                  <a
+                    href="https://www.linkedin.com/in/priyansh-agrawal-6a05a222a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                      class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -620,10 +639,10 @@
               <div class="member-img">
                 <img src="{% static 'assets/img/team/risabh.jpg'%}" class="img-fluid" alt="">
                 <div class="social">
-                 
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+
+                  <a href="https://www.facebook.com/profile.php?id=100015090407802"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/rishabhm0110/?hl=en"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/rishabh-mishra-0454a322b/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -660,7 +679,7 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>spark4ai.iitkgp@gmail.com</p>
+                <p>SPARK4AI.iitkgp@gmail.com</p>
               </div>
 
               <div class="phone">
@@ -715,19 +734,21 @@
       <p>Spark your way to AI excellence!!</p>
       <div class="social-links">
 
-        <a href="https://www.facebook.com/profile.php?id=61552039076712&mibextid=ZbWKwL" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://instagram.com/spark4ai.iitkgp?igshid=NjIwNzIyMDk2Mg==" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://www.linkedin.com/company/spark4ai/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61552039076712&mibextid=ZbWKwL" class="facebook"><i
+            class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/SPARK4AI.iitkgp?igshid=NjIwNzIyMDk2Mg==" class="instagram"><i
+            class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/SPARK4AI/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Spark4AI</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>SPARK4AI</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/selecao-bootstrap-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Spark4AI</a>
+        Designed by <a href="https://bootstrapmade.com/">SPARK4AI</a>
       </div>
     </div>
   </footer><!-- End Footer -->
