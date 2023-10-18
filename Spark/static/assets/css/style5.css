@@ -102,6 +102,12 @@ h6 {
   font-weight: 700;
   letter-spacing: 1px;
 }
+.site-name {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #E6D8A0; /* Set the desired text color */
+  margin-left: 5px;
+  font-weight:700; /* Add some space between the logo and text */
+}
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
