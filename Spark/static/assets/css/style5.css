@@ -115,6 +115,18 @@ h6 {
   max-height: 40px;
 }
 
+@media (min-width: 769px) {
+  #header .logo img {
+    max-height: 60px;
+  }
+}
+
+/* Responsive styles for smaller screens (e.g., screens narrower than 768px) */
+@media (max-width: 768px) {
+  #header .logo img {
+    max-height: 30px;
+  }
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
